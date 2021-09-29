@@ -3,7 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# PyCharm build files
 .idea/
+
+# Postgres Data
+.data/
+data
 
 # C extensions
 *.so
