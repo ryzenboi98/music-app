@@ -6,6 +6,8 @@ from music_app import views
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'music-genres', views.MusicGenreViewSet)
+router.register(r'artists', views.ArtistViewSet)
+router.register(r'songs', views.SongViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

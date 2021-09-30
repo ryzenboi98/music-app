@@ -43,13 +43,15 @@ class Album(TimeStampedModel):
     def __str__(self):
         return self.name
 
-class UserFavoriteSong(TimeStampedModel):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    favourite_songs = models.ManyToManyField(Song)
-
 class UserFavoritePlaylist(TimeStampedModel):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    favourite_songs = models.ManyToManyField(Song)
+    favourite_playlist = models.ForeignKey(Playlist, on_delete=models.CASCADE)
+
+class UserFavoriteAlbum(TimeStampedModel):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    favourite_album = models.ForeignKey(Album, on_delete=models.CASCADE)
+
+
 
 
 
