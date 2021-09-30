@@ -9,5 +9,5 @@ class UserReadOnlyPermissions(permissions.BasePermission):
 class MusicGenreViewSet(viewsets.ModelViewSet):
     permission_classes = [UserReadOnlyPermissions]
 
-    queryset = MusicGenre.objects.all().order_by('-created_at')
+    queryset = MusicGenre.objects.all().order_by('created_at')
     serializer_class = serializers.MusicGenreSerializer

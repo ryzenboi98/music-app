@@ -4,4 +4,4 @@ from music_app.models import Artist
 class ArtistSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Artist
-        fields = ['url', 'name']
+        fields = ['id', 'name']

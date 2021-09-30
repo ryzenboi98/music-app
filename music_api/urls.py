@@ -8,6 +8,8 @@ router.register(r'users', views.UserViewSet)
 router.register(r'music-genres', views.MusicGenreViewSet)
 router.register(r'artists', views.ArtistViewSet)
 router.register(r'songs', views.SongViewSet)
+router.register(r'playlists', views.PlaylistViewSet)
+router.register(r'albums', views.AlbumViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
