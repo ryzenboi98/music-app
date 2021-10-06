@@ -9,5 +9,5 @@ class UserReadOnlyPermissions(permissions.BasePermission):
 class ArtistViewSet(viewsets.ModelViewSet, UserReadOnlyPermissions):
     permission_classes = [UserReadOnlyPermissions]
 
-    queryset = Artist.objects.all().order_by('created_at')
+    queryset = Artist.objects.all()
     serializer_class = serializers.ArtistSerializer

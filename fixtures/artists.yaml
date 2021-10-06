@@ -1,0 +1,12 @@
+- model: music_app.Artist
+  pk: 1
+  fields:
+    name: The Weeknd
+- model: music_app.Artist
+  pk: 2
+  fields:
+    name: Daft Punk
+- model: music_app.Artist
+  pk: 3
+  fields:
+    name: Dua Lipa

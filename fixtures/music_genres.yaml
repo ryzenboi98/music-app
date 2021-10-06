@@ -1,0 +1,16 @@
+- model: music_app.MusicGenre
+  pk: 1
+  fields:
+    name: Disco Pop
+- model: music_app.MusicGenre
+  pk: 2
+  fields:
+    name: Synth-pop
+- model: music_app.MusicGenre
+  pk: 3
+  fields:
+    name: Electropop
+- model: music_app.MusicGenre
+  pk: 4
+  fields:
+    name: Eletro-disco

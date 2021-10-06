@@ -6,7 +6,7 @@ from music_app import filters
 
 
 class AlbumViewSet(viewsets.ModelViewSet):
-    queryset = Album.objects.all().order_by('created_at')
+    queryset = Album.objects.all()
     serializer_class = serializers.AlbumSerializer
 
     filter_backends = [DjangoFilterBackend]

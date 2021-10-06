@@ -7,5 +7,5 @@ admin.site.register(MusicGenre)
 admin.site.register(Album)
 admin.site.register(Playlist)
 admin.site.register(Song)
-admin.site.register(UserFavoriteAlbum)
-admin.site.register(UserFavoritePlaylist)
+admin.site.register(UserFavoriteSong)
+

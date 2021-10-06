@@ -1,0 +1,36 @@
+- model: music_app.Song
+  pk: 1
+  fields:
+    name: I Feel It Coming
+    genre: 1
+    artists: [1, 2]
+- model: music_app.Song
+  pk: 2
+  fields:
+    name: Save Your Tears
+    genre: 2
+    artists: [1]
+- model: music_app.Song
+  pk: 3
+  fields:
+    name: Starboy
+    genre: 3
+    artists: [1]
+- model: music_app.Song
+  pk: 4
+  fields:
+    name: Blinding Lights
+    genre: 3
+    artists: [1]
+- model: music_app.Song
+  pk: 5
+  fields:
+    name: In Your Eyes
+    genre: 2
+    artists: [1]
+- model: music_app.Song
+  pk: 6
+  fields:
+    name: Levitating
+    genre: 4
+    artists: [3]

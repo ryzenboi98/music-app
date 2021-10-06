@@ -1,11 +1,15 @@
 from rest_framework import serializers
 from music_app.models import Song
-from .artists import ArtistSerializer
+from music_app.serializers import MusicGenreSerializer, ArtistSerializer
 
-class SongSerializer(serializers.HyperlinkedModelSerializer):
-    genre = serializers.CharField(max_length=50)
-    artists = ArtistSerializer(many=True)
-
+class SongSerializer(serializers.ModelSerializer):
     class Meta:
         model = Song
         fields = ['id', 'name', 'genre', 'artists']
+
+    def to_representation(self, instance):
+        rep = super().to_representation(instance)
+        rep['genre'] = MusicGenreSerializer(instance.genre).data
+
+        return rep
+

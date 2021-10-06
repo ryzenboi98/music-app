@@ -4,3 +4,4 @@ from .artists import ArtistSerializer
 from .songs import SongSerializer
 from .playlists import PlaylistSerializer
 from .albums import AlbumSerializer
+from .user_fav_songs import UserFavSongSerializer
