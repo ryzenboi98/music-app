@@ -46,7 +46,7 @@ class Album(models.Model):
         return self.name
 
 class UserFavoriteSong(models.Model):
-    user = models.ForeignKey(User, unique=True, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     favourite_songs = models.ManyToManyField(Song)
 
 
